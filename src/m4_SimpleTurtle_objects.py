@@ -14,7 +14,7 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 """
 ###############################################################################
 #
-# TODO: 1.
+# DONE: 1.
 #   Yes, that means for YOU to DO things per the following instructions:
 #
 #   On Line 13 above, replace  PUT_YOUR_OWN_NAME_HERE  with your OWN name.
@@ -48,7 +48,7 @@ import rosegraphics as rg
 
 ###############################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Run this module.  A window will pop up and Turtles will move around.
 #   After the Turtles stop moving, *click anywhere in the window to close it*.
 #
@@ -107,11 +107,11 @@ natasha.right(90)
 natasha.forward(50)
 
 natasha.speed = 1  # Now slower
-natasha.go_to(rg.Point(-100, 200))
+natasha.go_to(rg.Point(100, 200))
 
 ###############################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a few more lines of your own code to make one of the
 #   existing SimpleTurtles move some more and/or have different
 #   characteristics.
@@ -122,10 +122,14 @@ natasha.go_to(rg.Point(-100, 200))
 #   As always, test by running the module.
 #
 ###############################################################################
+natasha.pen.color = 'pink'
+natasha.pen.thickness = 10
 
+natasha.right(30)
+natasha.forward(100)
 ###############################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The above code  CONSTRUCTS  two SimpleTurtle objects
 #   and gives those objects NAMES:
 #       boris    natasha
@@ -149,10 +153,19 @@ natasha.go_to(rg.Point(-100, 200))
 #   As always, test by running the module.
 #
 ###############################################################################
+rabbit = rg.SimpleTurtle()
+rabbit.pen = natasha.pen
+rabbit.left(180)
+rabbit.forward(60)
+for k in range(6):
+    rabbit.left(60)
+    rabbit.forward(60)
+    rabbit.right(120)
+    rabbit.forward(60)
 
 ###############################################################################
 #
-# TODO: 6.
+# DONE: 6.
 #   Run one more time to be sure that all is still OK.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #
