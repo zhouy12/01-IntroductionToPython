@@ -10,7 +10,7 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 ###############################################################################
 
 ###############################################################################
-# TODO: 2.
+# DONE: 2.
 #   You should have RUN the  m5e_loopy_turtles  module and READ its code.
 #   (Do so now if you have not already done so.)
 #
@@ -57,10 +57,3 @@ for k in range(6):
     star.forward(60)
     star.right(120)
     star.forward(60)
-
-
-
-
-
-
-
